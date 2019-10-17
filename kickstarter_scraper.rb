@@ -8,18 +8,18 @@ require "pry"
 # image link: project.css("div.project-thumbnail a img").attribute("src").value
 # percent_funded: project.css("ul.project-stats li.first.funded strong").text.gsub("%","").to_i 
 
-def create_project_hash
-  html = File.read('fixtures/kickstarter.html')
+# def create_project_hash
+#   html = File.read('fixtures/kickstarter.html')
  
-kickstarter = Nokogiri::HTML(html)
-projects = {}
+# kickstarter = Nokogiri::HTML(html)
+# projects = {}
 
- # Iterate through the project
+# # Iterate through the project
 
-kickstarter.css("li.project.grid_4").each do |project|
-    projects[project] = {}
-  end
-binding.pry
-end
+# kickstarter.css("li.project.grid_4").each do |project|
+#     projects[project] = {}
+#   end
+# binding.pry
+# end
 
-create_project_hash
+# create_project_hash
