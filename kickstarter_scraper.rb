@@ -15,4 +15,4 @@ kickstarter = Nokogiri::HTML(html)
 binding.pry
 end
 
-projects = {}
+create_project_hash
